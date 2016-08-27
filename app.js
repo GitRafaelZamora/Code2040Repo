@@ -9,7 +9,7 @@ var github = 'https://github.com/GitRafaelZamora/Code2040Repo.git',
 		'github'  : github
 	};
 
-	Step 1
+	//Step 1
 	request.post({url:'http://challenge.code2040.org/api/register', 
 		form: jsonDictionary}, 
 		function(error,response,body) {
@@ -75,6 +75,7 @@ var github = 'https://github.com/GitRafaelZamora/Code2040Repo.git',
 				prefix = jsonBody.prefix,
 				array = jsonBody.array,
 				missMatch = Array();
+				
 			console.log(jsonBody);
 
 			for (var i = 0; i < array.length; i++) {
@@ -83,22 +84,12 @@ var github = 'https://github.com/GitRafaelZamora/Code2040Repo.git',
 				}
 			}
 
-			jsonBody.prefix = prefix;
-			jsonBody.array = missMatch;
-			jsonBody.token = API_KEY;
-
 			console.log(jsonBody)
 
 			request.post({url:'http://challenge.code2040.org/api/prefix/validate', 
-				form: {
-					token : API_KEY,
-					array : JSON.stringify(missMatch)
-				}}, 
+				form: jsonDictionary}, 
 				function(error,response,body) {
-
-					// console.log(error);
 					console.log(body);
-					// console.log(response);
 		 		}
 		 	);
  		}
