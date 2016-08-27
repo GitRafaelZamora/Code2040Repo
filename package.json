@@ -1,0 +1,27 @@
+{
+  "name": "code2040",
+  "token": "88e4941e9c84e7e092278e5b6dd24d9c",
+  "github": "https://github.com/GitRafaelZamora/Code2040Repo.git",
+  "version": "1.0.0",
+  "description": "Building API for the Code2040 Application process.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitRafaelZamora/Code2040Repo.git"
+  },
+  "author": "Rafael Zamora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GitRafaelZamora/Code2040Repo/issues"
+  },
+  "homepage": "https://github.com/GitRafaelZamora/Code2040Repo#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "request": "^2.74.0",
+    "reverse-string": "0.0.6"
+  }
+}
