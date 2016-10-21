@@ -1,5 +1,5 @@
 var request = require('request');
-var	express = require('express');
+var express = require('express');
 var bodyParser = require('body-parser');
 var reverse = require('reverse-string');
 
@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 var github = 'https://github.com/GitRafaelZamora/Code2040Repo.git',
-	API_KEY = '88e4941e9c84e7e092278e5b6dd24d9c',
+	API_KEY = '??????????????????????',
 	jsonDictionary = {
 		'token'   : API_KEY,
 		'github'  : github
