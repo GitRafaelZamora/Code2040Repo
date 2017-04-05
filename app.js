@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var request = require("request");
 var http = require("http");
 var reverse = require("reverse-string");
@@ -10,25 +10,6 @@ var	jsonDictionary = {
         "github"  : github
     };
 
-//	Step 1
-    request.post({url:"http://challenge.code2040.org/api/register", 
-	    form: jsonDictionary}, 
-	    function(error,response,body) {
-		    console.log(body);
-        }
-    );
-=======
-var request = require('request');
-var http = require("http");
-var reverse = require('reverse-string');
-
-var github = 'https://github.com/GitRafaelZamora/Code2040Repo.git';
-var	API_KEY = '??????????????????????';
-var	jsonDictionary = {
-		'token'   : API_KEY,
-		'github'  : github
-	};
-
 	//Step 1
 	request.post({url:'http://challenge.code2040.org/api/register', 
 		form: jsonDictionary}, 
@@ -36,7 +17,6 @@ var	jsonDictionary = {
 			console.log(body);
  		}
  	);
->>>>>>> 95b5174d0bfe0b952e94d8c5afce9863ad8fb946
 
  	//Step 2
     request.post({url:"http://challenge.code2040.org/api/reverse", 
